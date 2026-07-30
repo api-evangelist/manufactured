@@ -1,8 +1,16 @@
 aid: manufactured
 name: Manufactured
-description: Manufactured is a company surfaced as a portfolio company of bullpen-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Manufactured is a supply-chain and production platform for hardware and consumer-product
+  brands, backed by Bullpen Capital. Its web application (app.manufactured.com) helps teams
+  run overseas production end to end — issuing sourcing requests to vendors, managing supplier
+  and vendor profiles, negotiating order estimates and contracts under master procurement
+  agreements, tracking production timelines and calendars, and financing purchase orders through
+  production and repayment terms. The product also embeds an AI assistant built on LangChain.
+  At the time of enrichment the public marketing site and the api/docs/developer subdomains were
+  unreachable, and the GraphQL, Lambda and bot backends are private and authentication-gated
+  (introspection blocked), so no public API specification, developer portal, or documentation
+  could be harvested. This profile captures the real, observable surface only.
 url: https://raw.githubusercontent.com/api-evangelist/manufactured/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +18,31 @@ x-backed-by:
 - bullpen-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Manufacturing
+- Supply Chain
+- Sourcing
+- Procurement
+- Hardware
+- Production Financing
+- Vendor Management
+- AI Assistant
+image: https://app.manufactured.com/logo192.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +52,12 @@ maintainers:
 common:
 - type: Website
   url: https://manufactured.com
+- type: Login
+  url: https://app.manufactured.com
+- type: DomainSecurity
+  url: security/manufactured-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
