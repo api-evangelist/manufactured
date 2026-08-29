@@ -12,6 +12,9 @@ description: >-
   (introspection blocked), so no public API specification, developer portal, or documentation
   could be harvested. This profile captures the real, observable surface only.
 url: https://raw.githubusercontent.com/api-evangelist/manufactured/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "At the time of enrichment the public marketing site and the api/docs/developer subdomains were unreachable, and the GraphQL, Lambda and bot backends are private and authentication-gated (introspection"
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
